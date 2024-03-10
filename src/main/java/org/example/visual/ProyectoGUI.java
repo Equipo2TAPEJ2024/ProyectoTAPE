@@ -18,6 +18,17 @@ public class ProyectoGUI extends JFrame {
     private JScrollPane scrlCanciones;
     private JPanel panelCanciones;
     private JScrollPane scrollContenido;
+    private JLabel lblArtistas;
     private JScrollPane scrollArtistas;
+    private JPanel panelArtistas;
+    private JLabel lblAlbumes;
+    private JScrollPane scrollAlbumes;
+    private JPanel panelAlbumes;
+    private JLabel lblProductoras;
+    private JScrollPane scrollGeneros;
+    private JPanel panelGeneros;
+    private JScrollPane scrollProductoras;
+    private JLabel lblGeneros;
+    private JPanel panelProductoras;
 
 }

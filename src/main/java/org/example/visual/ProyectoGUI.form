@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.visual.ProyectoGUI">
   <grid id="27dc6" binding="panelGeneral" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="649" height="434"/>
+      <xy x="20" y="20" width="752" height="858"/>
     </constraints>
     <properties>
       <preferredSize width="400" height="600"/>
@@ -25,7 +25,7 @@
             <properties>
               <font name="Franklin Gothic Medium" size="20"/>
               <foreground color="-786446"/>
-              <text value="Bienvenido, Juan!"/>
+              <text value="Bienvenido, Equipo2!"/>
             </properties>
           </component>
           <hspacer id="a0056">
@@ -69,33 +69,36 @@
           </vspacer>
           <scrollpane id="e8846" binding="scrollContenido">
             <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="460"/>
+              </grid>
             </constraints>
             <properties>
-              <autoscrolls value="false"/>
+              <autoscrolls value="true"/>
               <background color="-12828862"/>
+              <focusTraversalPolicyProvider value="false"/>
               <foreground color="-14539481"/>
               <horizontalScrollBarPolicy value="31"/>
-              <opaque value="true"/>
+              <opaque value="false"/>
               <verticalScrollBarPolicy value="22"/>
             </properties>
             <border type="empty"/>
             <children>
-              <grid id="4e022" binding="panelScroll" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="4e022" binding="panelScroll" layout-manager="GridLayoutManager" row-count="10" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints/>
                 <properties>
                   <background color="-12828862"/>
                   <foreground color="-786446"/>
-                  <maximumSize width="2147483647" height="90"/>
+                  <maximumSize width="-1" height="-1"/>
+                  <minimumSize width="-1" height="-1"/>
+                  <preferredSize width="-1" height="-1"/>
                 </properties>
                 <border type="none"/>
                 <children>
                   <component id="74d05" class="javax.swing.JLabel" binding="lblCanciones">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                        <preferred-size width="591" height="24"/>
-                      </grid>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <font name="Franklin Gothic Heavy" size="20" style="0"/>
@@ -105,96 +108,168 @@
                   </component>
                   <scrollpane id="20f69" binding="scrlCanciones">
                     <constraints>
-                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                        <preferred-size width="591" height="229"/>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="100"/>
                       </grid>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <horizontalScrollBarPolicy value="32"/>
+                      <verticalScrollBarPolicy value="21"/>
+                    </properties>
                     <border type="empty"/>
                     <children>
-                      <grid id="9ed61" binding="panelCanciones" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                      <grid id="9ed61" binding="panelCanciones" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                         <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints/>
                         <properties>
                           <background color="-12828862"/>
-                          <maximumSize width="-1" height="50"/>
+                          <maximumSize width="-1" height="-1"/>
                           <minimumSize width="-1" height="-1"/>
-                          <preferredSize width="-1" height="50"/>
+                          <preferredSize width="-1" height="-1"/>
                         </properties>
                         <border type="empty"/>
-                        <children>
-                          <hspacer id="56209">
-                            <constraints>
-                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                            </constraints>
-                          </hspacer>
-                          <component id="ce6bc" class="javax.swing.JLabel">
-                            <constraints>
-                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="9" fill="0" indent="0" use-parent-layout="false">
-                                <preferred-size width="-1" height="10"/>
-                                <maximum-size width="-1" height="10"/>
-                              </grid>
-                            </constraints>
-                            <properties>
-                              <text value="Label"/>
-                            </properties>
-                          </component>
-                        </children>
+                        <children/>
                       </grid>
                     </children>
                   </scrollpane>
-                  <component id="b5253" class="javax.swing.JLabel">
+                  <component id="a5816" class="javax.swing.JLabel" binding="lblArtistas">
                     <constraints>
-                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                        <preferred-size width="591" height="24"/>
-                      </grid>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <font name="Franklin Gothic Heavy" size="20" style="0"/>
                       <foreground color="-786446"/>
-                      <text value="Tus favoritos"/>
+                      <text value="Tus Favoritos"/>
                     </properties>
                   </component>
-                  <scrollpane id="8f365" binding="scrollArtistas">
+                  <scrollpane id="84a98" binding="scrollArtistas">
                     <constraints>
-                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="100"/>
+                      </grid>
                     </constraints>
                     <properties>
-                      <verticalScrollBarPolicy value="22"/>
+                      <horizontalScrollBarPolicy value="32"/>
+                      <verticalScrollBarPolicy value="21"/>
                     </properties>
-                    <border type="none"/>
+                    <border type="empty"/>
                     <children>
-                      <grid id="28278" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                        <margin top="0" left="0" bottom="0" right="0"/>
+                      <grid id="d18ba" binding="panelArtistas" layout-manager="BorderLayout" hgap="0" vgap="0">
                         <constraints/>
-                        <properties/>
+                        <properties>
+                          <background color="-12828862"/>
+                          <preferredSize width="-1" height="-1"/>
+                        </properties>
                         <border type="none"/>
-                        <children>
-                          <component id="3c1f9" class="javax.swing.JLabel">
-                            <constraints>
-                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                            </constraints>
-                            <properties>
-                              <text value="Label"/>
-                            </properties>
-                          </component>
-                          <hspacer id="4bedc">
-                            <constraints>
-                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                            </constraints>
-                          </hspacer>
-                        </children>
+                        <children/>
                       </grid>
                     </children>
                   </scrollpane>
-                  <component id="140e" class="javax.swing.JLabel">
+                  <component id="951fd" class="javax.swing.JLabel" binding="lblGeneros">
                     <constraints>
                       <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <text value="Label"/>
+                      <font name="Franklin Gothic Heavy" size="17" style="0"/>
+                      <foreground color="-786446"/>
+                      <text value="Generos musicales mas escuchados"/>
                     </properties>
                   </component>
+                  <scrollpane id="e1178" binding="scrollGeneros">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalScrollBarPolicy value="32"/>
+                      <verticalScrollBarPolicy value="21"/>
+                    </properties>
+                    <border type="empty"/>
+                    <children>
+                      <grid id="5f4e7" binding="panelGeneros" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints/>
+                        <properties>
+                          <background color="-12828862"/>
+                          <preferredSize width="-1" height="-1"/>
+                        </properties>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </scrollpane>
+                  <component id="602ee" class="javax.swing.JLabel" binding="lblAlbumes">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Heavy" size="20" style="0"/>
+                      <foreground color="-786446"/>
+                      <text value="Los Albumes del momento"/>
+                    </properties>
+                  </component>
+                  <scrollpane id="dc861" binding="scrollAlbumes">
+                    <constraints>
+                      <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalScrollBarPolicy value="32"/>
+                      <verticalScrollBarPolicy value="21"/>
+                    </properties>
+                    <border type="empty"/>
+                    <children>
+                      <grid id="16f21" binding="panelAlbumes" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints/>
+                        <properties>
+                          <background color="-12828862"/>
+                          <maximumSize width="-1" height="-1"/>
+                          <minimumSize width="-1" height="-1"/>
+                          <preferredSize width="-1" height="-1"/>
+                        </properties>
+                        <border type="empty"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </scrollpane>
+                  <component id="279f" class="javax.swing.JLabel" binding="lblProductoras">
+                    <constraints>
+                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Heavy" size="20" style="0"/>
+                      <foreground color="-786446"/>
+                      <text value="Tus productoras preferidas"/>
+                    </properties>
+                  </component>
+                  <scrollpane id="7b3da" binding="scrollProductoras">
+                    <constraints>
+                      <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="80"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalScrollBarPolicy value="32"/>
+                      <verticalScrollBarPolicy value="21"/>
+                    </properties>
+                    <border type="empty"/>
+                    <children>
+                      <grid id="28cb2" binding="panelProductoras" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints/>
+                        <properties>
+                          <background color="-12828862"/>
+                          <maximumSize width="-1" height="-1"/>
+                          <minimumSize width="-1" height="-1"/>
+                          <preferredSize width="-1" height="-1"/>
+                        </properties>
+                        <border type="empty"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </scrollpane>
                 </children>
               </grid>
             </children>
