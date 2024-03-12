@@ -31,4 +31,8 @@ public class ProyectoGUI extends JFrame {
     private JLabel lblGeneros;
     private JPanel panelProductoras;
 
+    public ProyectoGUI(){
+        setContentPane(panelGeneral);
+        panelGeneral.add(panelCentro);
+    }
 }
