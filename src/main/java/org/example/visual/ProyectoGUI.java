@@ -34,5 +34,8 @@ public class ProyectoGUI extends JFrame {
     public ProyectoGUI(){
         setContentPane(panelGeneral);
         panelGeneral.add(panelCentro);
+
+        scrollContenido.getVerticalScrollBar().setUnitIncrement(12);
+
     }
 }

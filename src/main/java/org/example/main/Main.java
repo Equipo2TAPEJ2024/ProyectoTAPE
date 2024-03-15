@@ -17,11 +17,12 @@ public class Main {
             @Override
             public void run() {
                 JFrame frame = new ProyectoGUI();
-                frame.setSize(540,920);
+                frame.setSize(540,720);
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
-                frame.setResizable(false);
+                frame.setResizable(true);
                 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                frame.setTitle("Spotify 2");
 
             }
         });
