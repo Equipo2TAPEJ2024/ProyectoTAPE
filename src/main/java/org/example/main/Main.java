@@ -1,18 +1,16 @@
 package org.example.main;
 
-import org.example.visual.ProyectoGUI;
-
+import com.formdev.flatlaf.FlatLightLaf;
+import org.example.vista.ProyectoGUI;
 import javax.swing.*;
 
 public class Main {
-    public static void main(String[] args) {
-        /*try {
-            UIManager.setLookAndFeel( new FlatLightLaf() );
-        } catch( Exception ex ) {
-            System.err.println( "Failed to initialize LaF" );
-        }
 
-         */
+    public static void main(String[] args) {
+
+        FlatLightLaf.setup();
+        //UIManager.put("h1.font")
+
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
