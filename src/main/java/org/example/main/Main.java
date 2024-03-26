@@ -15,7 +15,7 @@ public class Main {
             @Override
             public void run() {
                 JFrame frame = new ProyectoGUI();
-                frame.setSize(540,720);
+                frame.setSize(540, 920);
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
                 frame.setResizable(true);
